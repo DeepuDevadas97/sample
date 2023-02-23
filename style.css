@@ -1,0 +1,645 @@
+
+@font-face {
+    font-family: 'Google-Sans';
+    src: url('../Test/assets/fonts/GoogleSans-Regular.ttf');
+}
+
+
+.fw-500{
+    font-weight: 500 !important;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700 !important;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #46afff !important;
+}
+
+
+
+h1, h2{
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+}
+
+
+h2{
+    font-size: 50px;
+    color: #14183E;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.section-label{
+    font-family: 'Poppins', sans-serif;
+    color: #5E6282;
+}
+@media (max-width: 767.98px){
+    .section-label{
+        font-weight: 500 !important;
+        font-size: 16px !important;
+    }
+    h2{
+        font-size: 28px;
+    }
+}
+
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #7bc6ff;
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background:#46afff;
+  }
+
+
+ 
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+header .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+header nav .logo-wrapper{
+    padding: 2rem 0;
+}
+header nav .logo{
+    width: 115px;
+    color: #7bc6ff;
+    font-size: 30px;
+}
+header nav .logo::first-letter{
+    color: rgb(0, 109, 204);
+}
+
+
+.navbar .nav-item{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Google-Sans';
+    margin-right: 55px;
+    font-weight: 400;
+}
+.navbar .nav-item.menu-last{
+    margin-right: 86px;
+}
+.navbar .nav-item.last{
+    margin-right: 42px;
+}
+.navbar .nav-item:last-child{
+    margin-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar .btn-signup{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 17px;
+    padding: 6px 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.navbar .btn-signup:hover{
+   box-shadow: 0 4px 28px #00000011 !important;
+   border: 1px solid  #46afff;
+   color:  #46afff;
+}
+
+.navbar button{
+    box-shadow: none !important;
+}
+.navbar button.navbar-toggler{
+    box-shadow: none;
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+}
+.hero-slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-slider .carousel-cell {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-slider .carousel-cell.cell-1{
+    background-image: url('./assets/images/slider1.jpg');
+}
+.hero-slider .carousel-cell.cell-2{
+    background-image: url('./assets/images/slider2.jpg');
+}
+.hero-slider .carousel-cell.cell-3{
+    background-image: url('./assets/images/slider3.jpg');
+}
+
+.hero-slider .carousel-cell .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+.hero-slider .carousel-cell .inner .subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+}
+.hero-slider .carousel-cell .inner .title {
+    font-size: 78px;
+    color: #cdcdcd;
+    max-width: 545px;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin: auto;
+}
+.hero-slider .carousel-cell .inner .title span{
+    color: #46afff;
+}
+.hero-slider .carousel-cell .inner .btn {
+    border: 1px solid #fff;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.hero-slider .carousel-cell .inner .btn:hover {
+    background: #fff;
+    color: #000 !important;
+}
+.hero-slider .flickity-prev-next-button {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+}
+.hero-slider .flickity-prev-next-button:hover {
+    background: transparent;
+}
+.hero-slider .flickity-prev-next-button .arrow {
+    fill: white;
+}
+.hero-slider .flickity-page-dots {
+    bottom: 30px;
+}
+.hero-slider .flickity-page-dots .dot {
+    width: 25px;
+    height: 3px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 2px;
+}
+.hero-slider .flickity-page-dots .dot.is-selected {
+    background: #7bc6ff;
+}
+
+
+
+
+.about{
+    width: 100%;
+    position: relative;
+    background-image: url('./assets/images/Decore.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 43%;
+    padding-top: 95px;
+    padding-bottom: 40px;
+}
+
+.about-head{
+    font-size: 62px;
+    color: #181E4B;
+    max-width: 545px;
+    line-height: 65px;
+    letter-spacing: -0.04em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.about-label{
+    color: #DF6951;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 75px;
+    margin-bottom: 24px;
+}
+.text-description{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #5E6282;
+    line-height: 30px;
+}
+.about-text{
+    max-width: 477px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+.btn-about{
+    font-size: 18px;
+    background: #7bc6ff;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    border-radius: 5px;
+    font-family: 'Google-Sans';
+    padding: 10px 28px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.btn-about:hover{
+    color: #fff;
+    background: #46afff;
+}
+
+
+.about-right{
+    width: 100%;
+    height: 600px;
+    background-image: url('./assets/images/about-img.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 110%;
+    position: relative;
+    z-index: 1000;
+}
+
+
+@media (min-width: 1600px){
+    header nav .logo-wrapper{
+        padding: 47px 0;
+    }
+    .about-label{
+        margin-top: 83px;
+    }
+    .about-right{
+        /* height: calc(100vh - 99px); */
+        background-size: 120%;
+    }
+
+}
+@media (max-width: 1399.98px){
+    .navbar .nav-item{
+        margin-right: 40px;
+    }
+    .navbar .nav-item.menu-last{
+        margin-right: 60px;
+    }
+    .navbar .nav-item.last{
+        margin-right: 30px;
+    }
+    .about-right{
+        background-size: 123%;
+    }
+}
+@media (max-width: 1199.98px){
+    .about-head{
+        font-size: 54px;
+        line-height: 68px;
+    }
+    .hero-slider .carousel-cell .inner .subtitle {
+        font-size: 1.6rem;
+        line-height: 1.2em;
+    }
+    .hero-slider .carousel-cell .inner .title {
+        font-size: 62px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .navbar{
+        background: #fff;
+        position: relative;
+        z-index: 1000000000;
+        box-shadow: 0 5px 16px #00000010;
+    }
+    header nav .logo-wrapper {
+        padding: 1.7rem 0;
+    }
+    .navbar ul{
+        padding: 40px 0;
+    }
+    .navbar ul li{
+        margin-bottom: 20px;
+    }
+    .navbar ul li a{
+        color: #000 !important;
+    }
+    .navbar ul li.last{
+        margin-bottom: 0;
+    }
+    .navbar .btn-signup{
+        font-size: 17px;
+        padding: 6px 20px;
+        color: #000;
+        border: 1px solid #000;
+    }
+   
+    
+    .about-head{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .about-label{
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    .about-text{
+        font-weight: 400;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .btn-about{
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: 'Google-Sans';
+        padding: 6px 16px;
+    }
+
+    .about-right{
+        height: 52vh;
+        background-size: 123%;
+    }
+}
+
+
+
+@media (max-width: 767.98px){
+    .about{
+        padding-top: 93px;
+    }
+    header nav .logo-wrapper {
+        padding: 1.5rem 0;
+    }
+    header nav .logo{
+        width: 95px;
+    }
+    .navbar ul{
+        padding: 30px 0;
+        padding-top: 15px;
+    }
+    .about-left{
+        padding-bottom: 30px;
+    }
+    .about-head{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.04em;
+    }
+   
+    .about-right{
+        height: 35vh;
+        background-size: contain;
+        background-position: center;
+    }
+    .hero-slider .carousel-cell .inner .subtitle {
+        font-size: 1.2rem;
+        line-height: 1.2em;
+    }
+    .hero-slider .carousel-cell .inner .title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .flickity-prev-next-button{
+        display: none;
+    }
+  
+}
+
+@media (max-width: 575.98px){
+    .navbar ul li{
+       width: 100%;
+     }
+    .navbar ul li a{
+       text-align: center;
+       margin:  0 auto;
+    }
+    .navbar ul li button{
+        margin:  0 auto;
+     }
+}
+
+
+
+
+
+.footer{
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+}
+
+.footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer ul .logo{
+    width: 115px;
+    color: #7bc6ff;
+    font-size: 30px;
+}
+
+.footer ul .logo::first-letter{
+    color: rgb(0, 109, 204);
+}
+
+.footer ul li .footer-text{
+    font-size: 13px;
+    max-width: 207px;
+    line-height: 17px;
+    margin-top: 20px;
+}
+.footer h5{
+    font-size: 21px;
+    font-weight: 700;
+    color: #080809;
+    margin-bottom: 30px;
+}
+.footer ul li{
+    margin-bottom: 12px;
+}
+.footer ul li:last-child{
+    margin-bottom: 12px;
+    margin-bottom: 0;
+}
+.footer ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #5E6282;
+}
+
+.footer .allright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.footer .allright span{
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer .allright span a{
+    color: #5E6282;
+}
+.footer .discover{
+    font-size: 20px;
+    color: #5E6282;
+}
+.footer .app-store-links a img{
+    width: 95px;
+}
+
+
+@media (max-width: 1199.98px){
+    .footer{
+        padding: 60px 0;
+    }
+    .footer .social-links a.ms-2{
+        margin-left: 0px !important;
+    }
+    .footer .app-store-links a img{
+        width: 88px;
+    }
+    .footer .allright{
+        margin-top: 60px;
+    }
+}
+
+
+@media (max-width: 991.98px){
+    .footer .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767.98px){
+    .footer{
+        padding: 40px 0;
+    }
+   
+    .footer .footer-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer h5 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .footer ul li{
+        margin-bottom: 5px !important;
+    }
+    .footer .app-store-links{
+        justify-content: center;
+    }
+    .footer .app-store-links a img{
+        width: 100px;
+    }
+    .footer .social-links{
+        justify-content: center;
+    }
+    .footer .allright{
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
+@media (max-width: 575.98px){
+    .container{
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+}
+
+
+
+
+.navbar-toggler.collapsed .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+    background-image: url("./assets/icons/close.svg");
+    width: 30px;
+    height: 30px;
+   
+}
+
+
